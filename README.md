@@ -1,45 +1,5 @@
-# Marie-2.0-English
-A modular telegram Python bot running on python3 with an sqlalchemy database.
 
-Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
-simple to use.
-
-Can be found on telegram as [linkz](https://t.me/mmlinkz).
-
-Marie and I are moderating a [webseries channel](https://t.me/mmwebseries), where you can ask for help setting up your
-bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
-I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
-
-Join the [groupl](https://t.me/filimsmovie) if you just want to stay in the loop about new features or
-announcements.
-
-Alternatively, [find me on telegram](https://t.me/alluaddict)! (Keep all support questions in the support chat, where more people can help you.)
-
-## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
-
-## Starting the bot.
-
-Once you've setup your database and your configuration (see below) is complete, simply run:
-
-`python3 -m tg_bot`
-
-
-## Setting up the bot (Read this before trying to use!):
-Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
-This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
-
-### Configuration
-
-There are two possible ways of configuring your bot: a config.py file, or ENV variables.
-
-The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `tg_bot` folder, alongside the `__main__.py` file . 
-This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
-your other settings.
-
-It is recommended to import sample_config and extend the Config class, as this will ensure your config contains all 
-defaults set in the sample_config, hence making it easier to upgrade.
-
+ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ മലയാളം മൂവീസ് ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ
 An example `config.py` file could be:
 ```
 from tg_bot.sample_config import Config
